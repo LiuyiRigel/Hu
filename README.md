@@ -1,8 +1,77 @@
-# Hu
+# TO  Hu, Gessing and Me
 
 给一根成年香蕉的远程共享代码修改库
+-----
 
 这是一个给你用的远程共享代码修改库。它的目的是让你能更清楚地提出代码报错、在 VS Code 里使用 Git、描述修改内容，并最终把修好的代码提交到仓库里。
+
+## 为什么我要写这个仓库？
+我希望你能更清楚地描述代码报错、修改内容和 Git 操作，这样我才能更快地帮你解决问题。
+
+我会尽力维护整个仓库的清晰和规范，毕业后我会删掉这个仓库，或者把它改成一个公开的 Git 教程。总之，这个仓库是为了让你更好地学习，以及更清晰地描述代码问题。
+
+## 这个仓库是怎么运行的?
+你提出Issue，描述你遇到的代码问题和修改内容，我的邮箱会收到消息通知，我会尽快回复你，帮你解决问题。
+或者换一种说法来说，我是一个人肉的Skill和超级节省Token 的 ==**能工智人==
+
+如果有必要我会继续在这个文件中整理你遇到的问题，并给出一定的解决方法，==但是一切的前提是你能做到遇到问题的时候会提问和说明，这是你需要学习的。==
+
+## 0. 写在前面
+
+### 什么是Git？
+Git 是一个版本控制系统，允许你跟踪代码的修改历史、协作开发、管理不同版本的代码。通过 Git，你可以在本地修改代码，然后把修改提交到远程仓库（例如 GitHub），让其他人也能看到你的改动。
+
+### 什么是GitHub？
+GitHub 是一个基于 Git 的代码托管平台，提供了一个在线界面来管理 Git 仓库。你可以在 GitHub 上创建仓库、提交代码、提 Issue、进行代码审查等。
+
+
+### Git安装
+
+
+参考网址：[给香蕉的Git教程](https://www.bilibili.com/video/BV1Hkr7YYEh8/)
+
+
+如果你不知道什么是“代理、梯子”，或者追求速度，那么请使用以下的方法安装 Git：
+参考链接：[给国内香蕉的Git安装教程](https://www.bilibili.com/video/BV1bRN2enEtV/)
+
+
+按安装过程中你会使用到如下网址
+
+> Git 官网：https://git-scm.com/
+> Git第一步配置：https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+> Gitee 官网： https://gitee.com/
+
+
+课外作业
+如果你对 Git 和 GitHub 还不熟悉，建议你先花点时间学习一下。可以参考以下资源：
+- [Git 官方文档](https://git-scm.com/doc)
+- [GitHub Guides](https://guides.github.com/)
+
+如果你想要在多试试Git的基本操作，你可以在以下网址学习
+
+- [一个较为简单可视化的Git学习平台 Learn Git Branching](https://learngitbranching.js.org/)
+
+## 快速开始/ 常见问题
+
+```bash
+报错：ModuleNotFoundError: No module named 'xxx'
+原因：没有安装指定的 Python 包。
+
+初始化conda环境
+conda env list
+
+选择你的环境
+conda activate banana-env
+
+conda init
+
+启用另外一个终端
+
+安装相关的包
+pip install banana1
+pip install banana2
+
+```
 
 ## 你该怎么用这个仓库
 
@@ -79,7 +148,7 @@
 > - 相关修改：我改了 `src/index.html` 和 `src/main.js`。
 附上相关的截图
 
-如果你不懂怎么写：
+#### 如果你不懂怎么写：
 
 - 先把你看到的报错原样复制粘贴在 Issue 里。
 - 再写一句“我想让它做什么，我做了什么，它却报错了”。
@@ -168,25 +237,15 @@
 - 我已尝试：
 - 我改了哪几行代码（或哪个函数）：
 
-### 7. 你现阶段的能力范围说明
+### 7. 常用错误解决办法
 
-你目前只需要会这几件事：
-
-- 会打开 VS Code。
-- 会复制粘贴 GPT 给的代码。
-- 会把报错信息发给我。
-
-我会帮你把这些信息翻译成真正的代码改动。你只要尽可能清楚地说明问题、把错误内容完整发出来就行。
-
----
-
-## 最后一点建议
-
-- 不要只发一句“报错了”，要把报错内容完整复制出来。
-- 如果不知道怎么说，就直接把你看到的报错、你改过的文件名和你想要的结果写出来。
-- 可以把你的问题写成“我做了 X，期望 Y，但出现了 Z”。
-
-欢迎随时把问题贴到这个仓库里
+>  `ModuleNotFoundError`
+- 问题：`ModuleNotFoundError: No module named 'xxx'`
+- 原因：没有安装指定的 Python 包。
+- 解决办法：在终端中运行 `pip install xxx` 安装该包。
 
 
-
+>  `SyntaxError: Non-UTF-8 code starting with '\x...'`
+- 问题：`SyntaxError: Non-UTF-8 code starting with '\x...'`
+- 原因：代码文件不是 UTF-8 编码，或者有中文字符没有正确
+- 解决办法：确保代码文件保存为 UTF-8 编码，或者删除/修改有问题的中文字符。
